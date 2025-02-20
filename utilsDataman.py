@@ -130,9 +130,9 @@ class TRCFile(object):
 
         """
         this_dat = np.empty((self.num_frames, 3))
-        this_dat[:, 0] = self.data[name + '_tx']
-        this_dat[:, 1] = self.data[name + '_ty']
-        this_dat[:, 2] = self.data[name + '_tz']
+        this_dat[:, 0] = self.data[name + '__tx']
+        this_dat[:, 1] = self.data[name + '__ty']
+        this_dat[:, 2] = self.data[name + '__tz']
         return this_dat
 
     def add_marker(self, name, x, y, z):
